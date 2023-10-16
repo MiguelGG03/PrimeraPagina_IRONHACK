@@ -1,0 +1,75 @@
+/* Resetear estilos y agregar un fondo */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 10px 0; /* Relleno superior e inferior del encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo de la barra de navegación para dispositivos móviles */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 20px; /* Espacio entre elementos de navegación */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Color del enlace de navegación */
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: table-cell;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
