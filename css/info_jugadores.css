@@ -185,15 +185,20 @@
         margin-right: 0;
     }
     
-
-    #seccion1 .logo img {
-        max-width: 50px;
+    #section1 .logo img{
+        max-width: 100px;
         height: auto;
     }
 
-    #seccion2 .image_box img{
-        max-width: 100px;
+    #seccion2 .logo img {
+        max-width: 300px;
         height: auto;
+    }
+
+    #seccion2 .image_box img {
+        max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+        height: auto; /* Mantén la relación de aspecto */
+        margin-top: 20px; /* Agrega margen superior para separar las imágenes */
     }
 
     .footer {
@@ -201,21 +206,18 @@
         text-align: center;
         color: white;
         padding: 10px; /* Reduce el padding para hacer el footer más pequeño */
-        position: fixed;
-        left: 0;
-        bottom: 0;
+        position: relative; /* Cambia de "fixed" a "relative" para que no superponga el contenido */
         width: 100%;
     }
-    
+
     form {
         display: flex; /* Para que los elementos del formulario estén en línea */
         justify-content: space-between; /* Distribuir los elementos de izquierda a derecha */
         padding: 10px; /* Agrega un poco de espaciado entre los elementos del formulario */
     }
-    
+
     form label,
     form input {
         margin: 5px; /* Espaciado entre etiquetas y campos de entrada */
     }
-    
 }
