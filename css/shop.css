@@ -153,8 +153,8 @@
         margin: 20px;
         background-color: gold;
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
     }
     
     .producto {
