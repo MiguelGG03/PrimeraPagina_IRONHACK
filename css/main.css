@@ -55,7 +55,7 @@
     .section {
         text-align: center;
         margin: 20px;
-        background-color: goldenrod;
+        background-color: rgb(206, 206, 24);
     }
 
     #seccion1 .logo {
