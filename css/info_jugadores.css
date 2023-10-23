@@ -80,15 +80,19 @@
         height: auto;
     }
 
-    #seccion1 .image_shrek img {
-        max-width: 500px;
-        height: auto;
+    #seccion2 {
+        /* Alinea los elementos de manera vertical y los centra */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
-    #seccion2 .image_box img{
-        max-width: 200px;
+    
+    #seccion2 img {
+        /* Establece un ancho máximo para las imágenes */
+        max-width: 100%;
         height: auto;
-    }
+    }    
 
     .footer {
         background-color: #1c1c1c;
@@ -167,6 +171,9 @@
         text-align: center;
         margin: 20px;
         background-color: gold;
+    }
+    .section> .image_box img{
+        height: 10px;
     }
 
     #seccion1 .logo {
