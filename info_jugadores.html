@@ -1,19 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Primera Página</title>
-    <link rel="stylesheet" href="css/info_jugadores.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="shop.html">Tienda</a></li>
-                <li><a href="iniciar_sesion.html">Iniciar Sesion</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<div class="subheader">
+    <div class="logo">
+        <img src="imgs/Al-Cabido-REAL.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="info_jugadores.html">Jugadores</a></li>
+            <li><a href="shop.html">Tienda</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="header">
+    <h1>Plantilla</h1>
+</div>
+
+<div class="section" id="seccion1">
+    <div class="logo">
+        <img src="imgs/Al-Cabido-REAL.png" alt="Logo">
+    </div>
+</div>
+<div class="section" id="seccion2">
+    <h2>Mejores jugadores</h2>
+    <p>Shrek (Mediapunta)</p>
+    <div class="logo">
+        <img src="imgs/59f878df3cec115efb362393.png" alt="Shrek">
+    </div>
+    <p>Pablo Motos(Delantero)</p>
+    <div class="image_box">
+        <img src="imgs/descarga (1).jpg" alt="PabloMotos">
+    </div>
+</div>
+
+
+<div class="footer">
+    <form action="/submit_email">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+    
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password"><br>
+    
+        <input type="submit" value="Submit">
+    </form>
+    
+</div>
+
 </body>
 </html>
